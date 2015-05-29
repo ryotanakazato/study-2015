@@ -2,7 +2,19 @@ package kadai_017;
 
 public class kadai_017 {
 
-	public int returnBiggestNumber(int i, int j, int k) {
+	public static void main(String[] args) {
+		int i = 5;
+		int j = 9;
+		int k = 10;
+
+		System.out.println("入力された数値は" + i + "," + j + "," + k + "で、一番大きな数値は"
+				+ returnBiggestNumber(i, j, k) + "です。");
+	}
+
+	/**
+	 * 3つの数字のうち最大の数字を判定するメソッド
+	 * */
+	public static int returnBiggestNumber(int i, int j, int k) {
 		// 最大の数字biggestNumber初期化
 		int biggestNumber = 0;
 		// iが最大の時
@@ -12,11 +24,10 @@ public class kadai_017 {
 		} else if (j > i && j > k) {
 			biggestNumber = j;
 			// kが最大の時
-		} else
+		} else {
 			biggestNumber = k;
+		}
 
-		System.out.println("入力された数値は" + i + "," + j + "," + k + "で、一番大きな数値は"
-				+ biggestNumber + "です");
 		return biggestNumber;
 
 	}
