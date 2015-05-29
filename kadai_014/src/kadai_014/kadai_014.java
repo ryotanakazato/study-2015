@@ -3,6 +3,7 @@ package kadai_014;
 public class kadai_014 {
 
 	public static void main(String[] args) {
+		// Å‘å’l1000
 		int max = 1000;
 		String multiple4 = "fizz";
 		String multiple6 = "buzz";
@@ -10,14 +11,19 @@ public class kadai_014 {
 
 		for (int i = 1; i <= max; i++) {
 			if (i % 100 == 0) {
+				// 100‚Ì”{”‚Ì‚Ífizz-buzz‚ğ‘å•¶š‚É
 				System.out.println(i + ":" +multiple12.toUpperCase());
+				// 12‚Ì”{”‚Ì‚Í"fizz-buzz"
 			} else if (i % 12 == 0) {
 				System.out.println(i + ":" + multiple12);
+				// 6‚Ì”{”‚Ì‚Í"buzz"
 			} else if (i % 4 == 0) {
 				System.out.println(i + ":" + multiple4);
+				// 4‚Ì”{”‚Ì‚Í"fizz"
 			} else if (i % 6 == 0)
 				System.out.println(i + ":" + multiple6);
 			else
+				// ‚»‚Ì‘¼‚Í‚»‚Ì‚Ü‚Ü•\¦
 				System.out.println(i);
 
 		}
