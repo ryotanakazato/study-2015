@@ -2,7 +2,6 @@ package kadai_017;
 
 public class kadai_017 {
 
-
 	public int returnBiggestNumber(int i, int j, int k) {
 		// Å‘å‚Ì”šbiggestNumber‰Šú‰»
 		int biggestNumber = 0;
@@ -13,9 +12,9 @@ public class kadai_017 {
 		} else if (j > i && j > k) {
 			biggestNumber = j;
 			// k‚ªÅ‘å‚Ì
-		} else if (k > i && k > j) {
+		} else
 			biggestNumber = k;
-		}
+
 		System.out.println("“ü—Í‚³‚ê‚½”’l‚Í" + i + "," + j + "," + k + "‚ÅAˆê”Ô‘å‚«‚È”’l‚Í"
 				+ biggestNumber + "‚Å‚·");
 		return biggestNumber;
